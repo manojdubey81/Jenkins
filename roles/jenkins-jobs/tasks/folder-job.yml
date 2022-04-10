@@ -6,7 +6,7 @@
 - name: Update Dir Template
   template:
     src: folders-job.xml
-    dest: /tmp/job.xml
+    dest: /tmp/sample.xml
 
 - name: Create a Directory
   when: check_dir.rc == 3
