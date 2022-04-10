@@ -1,7 +1,7 @@
 - name: Check Jenkins Connection
   shell: "{{JENKINS_CLI_PREFIX}} who-am-i"
 
--name: Create Jenkins Folders
+- name: Create Jenkins Folders
   include_tasks: folder-job.yml
   loop:
     - {name: "CI-Pipelines", description: "All CI Pipelines"}
