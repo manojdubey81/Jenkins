@@ -7,6 +7,6 @@
     - {name: "CI-Pipelines", description: "All CI Pipelines"}
 
 - name: Create Jenkins Multi Branch Pipelines
-  include_tasks: mb-jobs-list.yml
+  include_tasks: mb-job.yml
   loop: "{{MB_JOBS}}"
 
